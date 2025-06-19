@@ -1,0 +1,342 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local OwnerExe = Instance.new("ScreenGui")
+local scannerframe = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local scan = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local game = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local teleport1 = Instance.new("TextButton")
+local exe = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Holder = Instance.new("TextBox")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local con = Instance.new("Frame")
+local MainComponent = Instance.new("ScrollingFrame")
+local output = Instance.new("TextBox")
+local clr = Instance.new("TextButton")
+local script = Instance.new("Frame")
+local TextButtons = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+
+--Properties:
+
+OwnerExe.Name = "OwnerExe"
+OwnerExe.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OwnerExe.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+scannerframe.Name = "scannerframe"
+scannerframe.Parent = OwnerExe
+scannerframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scannerframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scannerframe.BorderSizePixel = 0
+scannerframe.Position = UDim2.new(0.375073552, 0, 0.237938628, 0)
+scannerframe.Size = UDim2.new(0, 400, 0, 250)
+
+TextLabel.Parent = scannerframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 400, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Project Stigma Backdoor"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 30.000
+
+scan.Name = "scan"
+scan.Parent = scannerframe
+scan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scan.BorderSizePixel = 0
+scan.Position = UDim2.new(0.125, 0, 0.316000015, 0)
+scan.Size = UDim2.new(0, 288, 0, 124)
+scan.Font = Enum.Font.SourceSans
+scan.Text = "Scan"
+scan.TextColor3 = Color3.fromRGB(0, 0, 0)
+scan.TextScaled = true
+scan.TextSize = 14.000
+scan.TextWrapped = true
+
+TextButton.Parent = scannerframe
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.844702303, 0, 0.316000015, 0)
+TextButton.Size = UDim2.new(0, 46, 0, 124)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Working Games"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+game.Name = "game"
+game.Parent = scannerframe
+game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+game.BorderColor3 = Color3.fromRGB(0, 0, 0)
+game.BorderSizePixel = 0
+game.Position = UDim2.new(-0.972766876, 0, 0, 0)
+game.Size = UDim2.new(0, 389, 0, 250)
+game.Visible = false
+
+ImageLabel.Parent = game
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.135888427, 0)
+ImageLabel.Size = UDim2.new(0, 279, 0, 216)
+ImageLabel.Image = "rbxassetid://112158070547446"
+
+TextLabel_2.Parent = game
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 280, 0, 39)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Levons Backdoored Game"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+teleport1.Name = "teleport1"
+teleport1.Parent = game
+teleport1.BackgroundColor3 = Color3.fromRGB(25, 203, 25)
+teleport1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+teleport1.BorderSizePixel = 0
+teleport1.Position = UDim2.new(0.717595696, 0, 0, 0)
+teleport1.Size = UDim2.new(0, 109, 0, 250)
+teleport1.Font = Enum.Font.SourceSansBold
+teleport1.Text = "Join"
+teleport1.TextColor3 = Color3.fromRGB(0, 0, 0)
+teleport1.TextSize = 14.000
+
+exe.Name = "exe"
+exe.Parent = OwnerExe
+exe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exe.BorderSizePixel = 0
+exe.Position = UDim2.new(0.297816336, 0, 0.181008905, 0)
+exe.Size = UDim2.new(0, 515, 0, 271)
+exe.Visible = false
+
+TextLabel_3.Parent = exe
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 396, 0, 72)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Project Stigma Backdoor Executor"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 30.000
+
+Holder.Name = "Holder"
+Holder.Parent = exe
+Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.0388349518, 0, 0.288069159, 0)
+Holder.Size = UDim2.new(0, 469, 0, 118)
+Holder.Font = Enum.Font.Jura
+Holder.PlaceholderText = "require(66666666).load(\"c00lkidd')"
+Holder.Text = ""
+Holder.TextColor3 = Color3.fromRGB(0, 0, 0)
+Holder.TextSize = 14.000
+Holder.TextXAlignment = Enum.TextXAlignment.Left
+Holder.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton_2.Parent = exe
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.780582428, 0, 0.774907768, 0)
+TextButton_2.Size = UDim2.new(0, 101, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "Console"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner.Parent = TextButton_2
+
+TextButton_3.Parent = exe
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.565048516, 0, 0.774907768, 0)
+TextButton_3.Size = UDim2.new(0, 105, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSansBold
+TextButton_3.Text = "Script Library"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_2.Parent = TextButton_3
+
+TextButton_4.Parent = exe
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.343689322, 0, 0.774907768, 0)
+TextButton_4.Size = UDim2.new(0, 106, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSansBold
+TextButton_4.Text = "Clear"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+UICorner_3.Parent = TextButton_4
+
+TextButton_5.Parent = exe
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.0388349518, 0, 0.774907768, 0)
+TextButton_5.Size = UDim2.new(0, 146, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSansBold
+TextButton_5.Text = "Execute"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_4.Parent = TextButton_5
+
+con.Name = "con"
+con.Parent = exe
+con.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+con.BorderColor3 = Color3.fromRGB(0, 0, 0)
+con.BorderSizePixel = 0
+con.Position = UDim2.new(-0.772950053, 0, -0.00158083311, 0)
+con.Size = UDim2.new(0, 398, 0, 271)
+con.Visible = false
+
+MainComponent.Name = "MainComponent"
+MainComponent.Parent = con
+MainComponent.Active = true
+MainComponent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainComponent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainComponent.Position = UDim2.new(0.0527383611, 0, 0.192142934, 0)
+MainComponent.Size = UDim2.new(0, 352, 0, 106)
+MainComponent.CanvasSize = UDim2.new(0, 0, 8, 0)
+
+output.Name = "output"
+output.Parent = MainComponent
+output.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+output.BorderColor3 = Color3.fromRGB(0, 0, 0)
+output.Position = UDim2.new(0, 0, 0.000924942316, 0)
+output.Size = UDim2.new(0, 479, 0, 10000000)
+output.ClearTextOnFocus = false
+output.Font = Enum.Font.Code
+output.MultiLine = true
+output.Text = ""
+output.TextColor3 = Color3.fromRGB(0, 0, 0)
+output.TextSize = 16.000
+output.TextWrapped = true
+output.TextXAlignment = Enum.TextXAlignment.Left
+output.TextYAlignment = Enum.TextYAlignment.Top
+
+clr.Name = "clr"
+clr.Parent = con
+clr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clr.BorderSizePixel = 0
+clr.Position = UDim2.new(0.278858751, 0, 0.691610157, 0)
+clr.Size = UDim2.new(0, 200, 0, 50)
+clr.Font = Enum.Font.SourceSansBold
+clr.Text = "Clear"
+clr.TextColor3 = Color3.fromRGB(0, 0, 0)
+clr.TextSize = 14.000
+
+script.Name = "script"
+script.Parent = exe
+script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script.BorderColor3 = Color3.fromRGB(0, 0, 0)
+script.BorderSizePixel = 0
+script.Position = UDim2.new(0.99877727, 0, -0.00158083311, 0)
+script.Size = UDim2.new(0, 379, 0, 271)
+script.Visible = false
+
+TextButtons.Name = "TextButtons"
+TextButtons.Parent = script
+TextButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButtons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtons.BorderSizePixel = 0
+TextButtons.Position = UDim2.new(0.0313272998, 0, 0.048763454, 0)
+TextButtons.Size = UDim2.new(0, 158, 0, 77)
+TextButtons.Font = Enum.Font.ArialBold
+TextButtons.Text = "Polaria"
+TextButtons.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButtons.TextSize = 14.000
+
+UICorner_5.Parent = TextButtons
+
+TextButton_6.Parent = script
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.524224341, 0, 0.0473702662, 0)
+TextButton_6.Size = UDim2.new(0, 163, 0, 77)
+TextButton_6.Font = Enum.Font.ArialBold
+TextButton_6.Text = "BTools"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+UICorner_6.Parent = TextButton_6
+
+TextButton_7.Parent = script
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0.0309398323, 0, 0.354231983, 0)
+TextButton_7.Size = UDim2.new(0, 158, 0, 78)
+TextButton_7.Font = Enum.Font.ArialBold
+TextButton_7.Text = "Goner"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
+
+UICorner_7.Parent = TextButton_7
+
+TextLabel_4.Parent = script
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.029023746, 0, 0.670846403, 0)
+TextLabel_4.Size = UDim2.new(0, 350, 0, 78)
+TextLabel_4.Font = Enum.Font.ArialBold
+TextLabel_4.Text = "im lazy so more scripts soon"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextButton_8.Parent = exe
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.768932045, 0, 0, 0)
+TextButton_8.Size = UDim2.new(0, 63, 0, 72)
+TextButton_8.Font = Enum.Font.SourceSansBold
+TextButton_8.Text = "R6"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 28.000
+
+TextButton_9.Parent = exe
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.891262114, 0, 0, 0)
+TextButton_9.Size = UDim2.new(0, 56, 0, 72)
+TextButton_9.Font = Enum.Font.SourceSansBold
+TextButton_9.Text = "RE"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 28.000
